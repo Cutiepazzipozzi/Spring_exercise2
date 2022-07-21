@@ -12,5 +12,10 @@ public class Order {
     private String pName;
     private int price;
     private int pNumber;
-    private OrderProduct product;
+
+    public Order(String pName, int price, int pNumber) {
+        this.pName = pName;
+        this.price = price;
+        this.pNumber = pNumber;
+    }
 }
