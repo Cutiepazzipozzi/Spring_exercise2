@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<http xmlns:th="http://www.thymeleaf.org">
+    <body>
+    <div>
+        <form action="/products/join" method="post">
+            <div>
+                <label for="productName">상품 이름</label>
+                <input type="text" id="productName" name="productName" placeholder="상품 이름 입력">
+            </div>
+            <div>
+                <label for="productNumber">상품 개수</label>
+                <input type="text" id="productNumber" name="productNumber" placeholder="상품 개수 입력">
+            </div>
+            <div>
+                <label for="productPrice">상품 가격</label>
+                <input type="text" id="productPrice" name="productPrice" placeholder="상품 가격 입력">
+            </div>
+            <div>
+                <label for="kind">상품 종류</label>
+                <input type="text" id="kind" name="kind" placeholder="종류 입력(영화, 음반, 도서)">
+            </div>
+            <button type="submit">등록</button>
+        </form>
+    </div>
+    </body>
+</http>

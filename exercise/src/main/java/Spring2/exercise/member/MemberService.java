@@ -8,6 +8,9 @@ import java.util.Optional;
 @Service
 public class MemberService {
     private MemberRepository memberRepository;
+    public void join(Member member) {
+        memberRepository.save(member);
+    }
     public List<Member> findAll() {
         return memberRepository.findAll();
     }

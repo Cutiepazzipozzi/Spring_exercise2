@@ -7,7 +7,7 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
-public class OrderRepositoryImpl {
+public class OrderRepositoryImpl implements OrderRepository {
     @PersistenceContext
     private EntityManager em;
 
