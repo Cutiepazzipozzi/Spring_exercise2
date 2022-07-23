@@ -24,5 +24,8 @@ public class OrderRepositoryImpl implements OrderRepository {
         em.remove(order);
     }
 
+    public int totalPrice(Order order) {
+        return order.
+    }
 
 }

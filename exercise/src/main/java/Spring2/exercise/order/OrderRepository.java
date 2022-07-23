@@ -6,4 +6,5 @@ public interface OrderRepository {
     void createOrder(Order order);
     List<Order> findAll();
     void deleteOrder(Order order);
+    int totalPrice(Order order);
 }
