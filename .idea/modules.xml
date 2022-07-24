@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/backend_git5.iml" filepath="$PROJECT_DIR$/.idea/backend_git5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exercise.iml" filepath="$PROJECT_DIR$/.idea/modules/exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exercise.main.iml" filepath="$PROJECT_DIR$/.idea/modules/exercise.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exercise.test.iml" filepath="$PROJECT_DIR$/.idea/modules/exercise.test.iml" />
     </modules>
   </component>
 </project>
