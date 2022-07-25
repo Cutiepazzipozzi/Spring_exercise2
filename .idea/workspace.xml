@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fd5e9a3-3f9b-4b31-8d55-697f7955cde6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/backend_git5.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/MemberForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/MemberForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/OrderForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/OrderForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/MemberRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/MemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/product/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +34,18 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2COZMPWc5XuJPQ3bQW1OyUrtEP4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -35,12 +53,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,5 +69,16 @@
       <updated>1658675548081</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

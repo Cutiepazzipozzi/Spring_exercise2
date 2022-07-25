@@ -1,6 +1,7 @@
 package Spring2.exercise.order;
 
 import Spring2.exercise.member.Member;
+import Spring2.exercise.product.Product;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,17 +20,14 @@ public class Order {
     @ManyToOne
     @JoinColumn(name="member_id")
     private Member member;
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    private Product product;
 
-    @OneToMany(mappedBy="order")
-    private List<>
-    private String pName;
     private int pNumber;
-    private String address;
 
-    public Order(Member member, String pName, int pNumber, String address) {
+    public Order(Member member, Product product, int pNumber) {
         this.member = member;
-        this.pName = pName;
+        this.product = product;
         this.pNumber = pNumber;
-        this.address = address;
     }
 }

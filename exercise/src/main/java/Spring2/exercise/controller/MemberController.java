@@ -1,6 +1,5 @@
 package Spring2.exercise.controller;
 
-import Spring2.exercise.AppConfig;
 import Spring2.exercise.member.Member;
 import Spring2.exercise.member.MemberRepository;
 import Spring2.exercise.member.MemberService;
@@ -14,19 +13,18 @@ import java.util.List;
 @Controller
 public class MemberController {
 
-    AppConfig appConfig = new AppConfig();
-    MemberRepository memberRepository = appConfig.memberRepository();
-    MemberService memberService = appConfig.memberService();
+    MemberRepository memberRepository;
+    MemberService memberService;
     @GetMapping("/members/join")
     public String join() {
         return "members/joinMember";
     }
     @PostMapping("/members/join")
     public String enroll(MemberForm form) {
-        Member member = new Member(form.getName(), form.getCity(), form.getDistance());
+        Member member = new Member(form.getName(), form.getId(), form.getAddress());
         member.setName(form.getName());
-        member.setCity(form.getCity());
-        member.setDistance(form.getDistance());
+        member.setId(form.getId());
+        member.setAddress(form.getAddress());
 
         memberService.join(member);
 

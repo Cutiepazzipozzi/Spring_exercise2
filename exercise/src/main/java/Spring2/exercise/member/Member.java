@@ -1,5 +1,6 @@
 package Spring2.exercise.member;
 
+import Spring2.exercise.order.Address;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,9 +19,12 @@ public class Member {
     @Column(name="member_id")
     private Long id;
 
-    private String city;
+    @Embedded
+    private Address address;
 
-    private int distance;
-
-
+    public Member(String name, Long id, Address address) {
+        this.name = name;
+        this.id = id;
+        this.address = address;
+    }
  }

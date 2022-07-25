@@ -1,6 +1,5 @@
 package Spring2.exercise.controller;
 
-import Spring2.exercise.AppConfig;
 import Spring2.exercise.order.Order;
 import Spring2.exercise.order.OrderRepository;
 import org.springframework.stereotype.Controller;
@@ -12,9 +11,7 @@ import java.util.List;
 
 @Controller
 public class OrderController {
-    AppConfig appConfig = new AppConfig();
-    OrderRepository orderRepository = appConfig.orderRepository();
-
+    OrderRepository orderRepository;
     @GetMapping("/orders/join")
     public String join() {
         return "orders/joinOrder";
@@ -22,9 +19,9 @@ public class OrderController {
 
     @PostMapping("/orders/join")
     public String enroll(OrderForm form) {
-        Order order = new Order(form.getPName(), form.getPrice(), form.getPNumber());
-        order.setPName(form.getPName());
-        order.setPrice(form.getPrice());
+        Order order = new Order(form.getMember(), form.getProduct(), form.getPNumber());
+        order.setMember(form.getMember());
+        order.setProduct(form.getProduct());
         order.setPNumber(form.getPNumber());
 
         orderRepository.createOrder(order);
