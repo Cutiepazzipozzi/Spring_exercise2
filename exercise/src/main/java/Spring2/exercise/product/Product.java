@@ -4,10 +4,7 @@ import Spring2.exercise.order.Order;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -21,6 +18,8 @@ public class Product {
     private String ProductName;
     private int ProductPrice;
     private int stockQuantity;
+
+    @Enumerated(EnumType.STRING)
     private OrderProduct kind;
 
     public void addStock(int quantity) {

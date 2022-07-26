@@ -21,7 +21,17 @@ public class OrderService {
     public Long order(Long memberId, Long productId, int count) {
         Member member = memberRepository.findOne(memberId);
         Product product = productRepository.findOne(productId);
+
+        OrderItem orderItem
+                = OrderItem.createOrderItem(product, product.getProductPrice(),  count);
+
+        Order order = Order.createOrder(member, orderItem);
+        orderRepository.join(order);
+
+        return
     }
+
+
 
 
 }

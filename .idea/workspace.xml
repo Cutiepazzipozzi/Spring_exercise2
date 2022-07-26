@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fd5e9a3-3f9b-4b31-8d55-697f7955cde6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/AppConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/MemberRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/MemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/product/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/product/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/product/ProductChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/product/ProductChange.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

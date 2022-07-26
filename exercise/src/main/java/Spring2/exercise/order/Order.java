@@ -24,9 +24,28 @@ public class Order {
     private Member member;
 
     @OneToMany(mappedBy="order", cascade = CascadeType.ALL)
-    private List<Product> Products = new ArrayList<>();
+    private List<OrderItem> orderItems = new ArrayList<>();
+
     private String pName;
     private int pNumber;
     private String address;
+
+    public void addOrderItem(OrderItem orderItem) {
+        orderItems.add(orderItem);
+        orderItem.setOrder(this);
+    }
+
+    public Order createOrder(Member member, OrderItem... orderItems) {
+        Order order = new Order();
+        order.setMember(member);
+        for(OrderItem orderItem : orderItems) {
+            order.addOrderItem(orderItem);
+        }
+        return order;
+    }
+
+    public void cancel() {
+
+    }
 
 }
