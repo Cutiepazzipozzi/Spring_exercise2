@@ -1,6 +1,5 @@
 package Spring2.exercise.controller;
 
-import Spring2.exercise.AppConfig;
 import Spring2.exercise.product.Product;
 import Spring2.exercise.product.ProductRepository;
 import org.springframework.stereotype.Controller;

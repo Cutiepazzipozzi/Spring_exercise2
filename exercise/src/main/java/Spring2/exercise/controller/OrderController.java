@@ -1,6 +1,5 @@
 package Spring2.exercise.controller;
 
-import Spring2.exercise.AppConfig;
 import Spring2.exercise.order.Order;
 import Spring2.exercise.order.OrderRepository;
 import org.springframework.stereotype.Controller;
@@ -12,8 +11,8 @@ import java.util.List;
 
 @Controller
 public class OrderController {
-    AppConfig appConfig = new AppConfig();
-    OrderRepository orderRepository = appConfig.orderRepository();
+
+    OrderRepository orderRepository;
 
     @GetMapping("/orders/join")
     public String join() {
@@ -27,7 +26,7 @@ public class OrderController {
         order.setPrice(form.getPrice());
         order.setPNumber(form.getPNumber());
 
-        orderRepository.createOrder(order);
+        orderRepository.join(order);
         return "redirect:/";
     }
 

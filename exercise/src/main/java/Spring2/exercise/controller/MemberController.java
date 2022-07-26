@@ -1,8 +1,6 @@
 package Spring2.exercise.controller;
 
-import Spring2.exercise.AppConfig;
 import Spring2.exercise.member.Member;
-import Spring2.exercise.member.MemberRepository;
 import Spring2.exercise.member.MemberService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

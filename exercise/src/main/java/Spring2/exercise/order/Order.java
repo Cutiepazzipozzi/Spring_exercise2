@@ -1,10 +1,13 @@
 package Spring2.exercise.order;
 
 import Spring2.exercise.member.Member;
+import Spring2.exercise.product.Product;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="orders")
@@ -20,16 +23,10 @@ public class Order {
     @JoinColumn(name="member_id")
     private Member member;
 
-    @OneToMany(mappedBy="order")
-    private List<>
+    @OneToMany(mappedBy="order", cascade = CascadeType.ALL)
+    private List<Product> Products = new ArrayList<>();
     private String pName;
     private int pNumber;
     private String address;
 
-    public Order(Member member, String pName, int pNumber, String address) {
-        this.member = member;
-        this.pName = pName;
-        this.pNumber = pNumber;
-        this.address = address;
-    }
 }
