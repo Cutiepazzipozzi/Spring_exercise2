@@ -7,7 +7,4 @@ public class ProductChange {
     private int ProductNumber;
     private OrderProduct kind;
 
-    public Product change(Product product) {
-        return new Product(ProductName, ProductPrice, ProductNumber, kind);
-    }
 }
