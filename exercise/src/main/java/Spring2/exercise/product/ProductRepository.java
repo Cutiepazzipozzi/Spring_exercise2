@@ -11,7 +11,6 @@ import java.util.List;
 @Repository
 @RequiredArgsConstructor
 public class ProductRepository {
-    private ProductChange productChange;
     private final EntityManager em;
 
     public void save(Product product) {
@@ -20,12 +19,10 @@ public class ProductRepository {
         }
         else {
             em.merge(product);
+            //잇츠 라잌 수정 시 업데이트 하는 듯한
         }
     }
 
-    public void Change(Product product) {
-        productChange.change(product);
-    }
 
     public List<Product> findAll() {
         return em.createQuery("select p from Product as p", Product.class)
