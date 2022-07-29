@@ -18,9 +18,7 @@ public class Member {
     @Column(name="member_id")
     private Long id;
 
+    @Column(name="member_city")
     private String city;
-
-    private int distance;
-
 
  }

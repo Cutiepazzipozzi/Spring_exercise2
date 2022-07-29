@@ -35,7 +35,7 @@ public class Order {
         orderItem.setOrder(this);
     }
 
-    public Order createOrder(Member member, OrderItem... orderItems) {
+    public static Order createOrder(Member member, OrderItem... orderItems) {
         Order order = new Order();
         order.setMember(member);
         for(OrderItem orderItem : orderItems) {
@@ -45,7 +45,18 @@ public class Order {
     }
 
     public void cancel() {
+        for(OrderItem orderItem : orderItems) {
+            orderItem.cancel();
+        }
+        //원래는 배달 중이면 취소할 수 없다는 경고를 띄워야 하나 나는 배달 상태를 제외시킴
+    }
 
+    public int getTotalPrice() {
+        int total=0;
+        for(OrderItem orderItem : orderItems) {
+            total += orderItem.getTotalPrice();
+        }
+        return total;
     }
 
 }

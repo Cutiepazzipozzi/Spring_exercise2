@@ -28,10 +28,16 @@ public class OrderService {
         Order order = Order.createOrder(member, orderItem);
         orderRepository.join(order);
 
-        return
+        return order.getId();
     }
 
+    public void cancelOrder(Long id) {
+        Order order = orderRepository.findOne(id);
+        order.cancel();
+    }
 
+    //이제 ordersearch가 들어감 물품이나 회원명으로 사람을 찾는?
+    public void orderSearch() {
 
-
+    }
 }
