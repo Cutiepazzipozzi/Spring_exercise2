@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <http xmlns:th="http://www.thymeleaf.org">
     <body>
-    <div>
-        <form action="/products/edit" method="post">
-            <div>
-                <label for="productName">상품 이름</label>
-                <input type="text" id="productName" name="productName" placeholder="상품 이름 입력">
+    <div class="container">
+<!--        <div th:replace="fragments/bodyHeader :: bodyHeader"/>-->
+        <form th:object="${form}" action="products/{id}/edit" method="post">
+            <!-- id -->
+            <input type="hidden" th:field="*{id}" />
+            <div class="form-group">
+                <label th:for="name">상품명</label>
+                <input type="text" th:field="*{name}" class="form-control"
+                       placeholder="이름을 입력하세요" />
             </div>
-            <div>
-                <label for="productNumber">상품 개수</label>
-                <input type="text" id="productNumber" name="productNumber" placeholder="상품 개수 입력">
+            <div class="form-group">
+                <label th:for="price">가격</label>
+                <input type="number" th:field="*{price}" class="form-control"
+                       placeholder="가격을 입력하세요" />
             </div>
-            <div>
-                <label for="productPrice">상품 가격</label>
-                <input type="text" id="productPrice" name="productPrice" placeholder="상품 가격 입력">
+            <div class="form-group">
+                <label th:for="stockQuantity">수량</label>
+                <input type="number" th:field="*{stockQuantity}" class="form-control" placeholder="수량을 입력하세요" />
             </div>
-            <div>
-                <label for="kind">상품 종류</label>
-                <input type="text" id="kind" name="kind" placeholder="종류 입력(영화, 음반, 도서)">
+            <div class="form-group">
+                <label th:for="kind">수량</label>
+                <input type="text" th:field="*{kind}" class="form-control" placeholder="상품 종류를 입력하세요" />
             </div>
-            <button type="submit">등록</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-    </div>
+<!--        <div th:replace="fragments/footer :: footer" />-->
+    </div> <!-- /container -->
     </body>
 </http>
