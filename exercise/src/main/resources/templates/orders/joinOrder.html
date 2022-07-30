@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<http xmlns:th="http://www.thymeleaf.org">
+    <body>
+    <div>
+        <form action="/products/join" method="post">
+            <div>
+                <label for="member">주문회원</label>
+                <select name="memberId" id="member">
+                    <option value="">회원선택</option>
+                    <option th:each="member : ${members}"
+                            th:value="${member.id}"
+                            th:text="${member.name}"
+                    />
+                </select>
+            </div>
+            <div>
+                <label for="pName">상품명</label>
+                <select name="pName" id="pName">
+                    <option value="">상품선택</option>
+                    <option th:each="product : ${products}"
+                            th:value="${product.id}"
+                            th:text="${product.name}"
+                    />
+                </select>
 
-</body>
-</html>
+            </div>
+            <div>
+                <label for="count">주문 수량</label>
+                <input type="text" id="count" name="count" placeholder="주문 수량 입력">
+            </div>
+            <button type="submit">등록</button>
+        </form>
+    </div>
+    </body>
+</http>

@@ -28,6 +28,7 @@ public class ProductController {
     @PostMapping("/products/join")
     public String enroll(ProductForm form) {
         Product product = new Product();
+
         product.setProductName(form.getProductName());
         product.setProductPrice(form.getProductPrice());
         product.setStockQuantity(form.getStockQuantity());

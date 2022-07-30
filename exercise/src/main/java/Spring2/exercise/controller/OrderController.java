@@ -36,23 +36,22 @@ public class OrderController {
     }
 
     @PostMapping("/orders/join")
-    public String enroll(@RequestParam("mID") Long memberId, @RequestParam("pId")
+    public String enroll(@RequestParam("mId") Long memberId, @RequestParam("pId")
             Long productId, int count) {
 
         orderService.order(memberId, productId, count);
         return "redirect:/";
     }
 
-//    @GetMapping("/orders/list")
-//    public String list(Model model) {
-//        List<Order> orders = orderService;
-//        model.addAttribute("orders", orders);
-//        return "orders/orderList";
-//    }
+    @GetMapping("/orders/list")
+    public String list(Model model) {
+        List<Order> orders = orderService.findAll();
+        model.addAttribute("orders", orders);
+        return "orders/orderList";
+    }
 
     //보엣 주문 조회가 안될 듯함...
     //이거 말고
-
     @DeleteMapping("/orders/list/{id}")
     public String delete(@RequestParam("id") Long orderId) {
         orderService.cancelOrder(orderId);
