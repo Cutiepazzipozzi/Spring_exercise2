@@ -7,6 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class OrderForm {
+    private Long id;
     private Member member;
     //여기서 id도 입력받아야 하는데 어떡하지??
     private String pName;

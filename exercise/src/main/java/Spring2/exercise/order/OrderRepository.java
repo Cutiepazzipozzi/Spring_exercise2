@@ -21,10 +21,10 @@ public class OrderRepository {
         return em.find(Order.class, id);
     }
 
-//    public List<Order> findAll() {
-//        return em.createQuery("select c from Order as c", Order.class)
-//                .getResultList();
-//    }
+    public List<Order> findAll() {
+        return em.createQuery("select o from Order as o", Order.class)
+                .getResultList();
+    }
 
     public void deleteOrder(Order order) {
         em.remove(order);

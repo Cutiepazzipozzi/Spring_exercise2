@@ -7,8 +7,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ProductForm {
+    private Long id;
     private String ProductName;
     private int ProductPrice;
-    private int ProductNumber;
+    private int stockQuantity;
     private OrderProduct kind;
 }
