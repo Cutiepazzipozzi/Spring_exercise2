@@ -2,22 +2,14 @@
 <http xmlns:th="http://www.thymeleaf.org">
     <body>
     <div>
-        <form action="/members/order" method="post">
+        <form action="/members/join" method="post">
             <div>
                 <label for="name">고객 이름</label>
                 <input type="text" id="name" name="name" placeholder="이름 입력">
             </div>
             <div>
-                <label for="pName">상품 이름</label>
+                <label for="pName">거주지 이름</label>
                 <input type="text" id="pName" name="pName" placeholder="상품 이름 입력">
-            </div>
-            <div>
-                <label for="price">상품 가격</label>
-                <input type="text" id="price" name="price" placeholder="상품 가격 입력">
-            </div>
-            <div>
-                <label for="pNumber">상품 개수</label>
-                <input type="text" id="pNumber" name="pNumber" placeholder="상품 개수 입력">
             </div>
             <button type="submit">등록</button>
         </form>

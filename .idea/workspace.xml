@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fd5e9a3-3f9b-4b31-8d55-697f7955cde6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/product/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_2_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_validation_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/H2ServerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/exercise.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/exercise.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/exercise.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/exercise.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/MemberForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/MemberForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/member/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/product/ProductChange.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/product/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/product/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/OrderForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/OrderForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/resources/templates/members/joinMember.html" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/resources/templates/members/joinMember.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/resources/templates/members/memberList.html" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/resources/templates/members/memberList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,23 @@
     <projectState path="$PROJECT_DIR$/exercise">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="exercise" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
