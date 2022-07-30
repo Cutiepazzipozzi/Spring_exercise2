@@ -28,7 +28,6 @@ public class Order {
 
     private String pName;
     private int pNumber;
-    private String address;
 
     public void addOrderItem(OrderItem orderItem) {
         orderItems.add(orderItem);
