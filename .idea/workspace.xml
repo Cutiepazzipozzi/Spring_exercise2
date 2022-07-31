@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fd5e9a3-3f9b-4b31-8d55-697f7955cde6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/order/OrderSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/java/Spring2/exercise/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercise/src/main/resources/templates/products/editProduct.html" beforeDir="false" afterPath="$PROJECT_DIR$/exercise/src/main/resources/templates/products/editProduct.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

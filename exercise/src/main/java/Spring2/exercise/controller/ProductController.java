@@ -69,19 +69,22 @@ public class ProductController {
     //여기가 좀 궁금하다 id는 이제 여기 인자로 받지 않는데
     //폼에서 받아와서 id가 보관되는 건지 싶다
     @PostMapping("/products/{id}/edit")
-    public String edit2(@ModelAttribute("form") ProductForm form) {
+    public String edit2(@PathVariable("id") Long productId, Model model) {
         //ModelAttribute가 붙으면 객체를 자동으로 생성해준다
         //는 bean 클래스라야 한다
-        Product product = new Product();
-        product.setId(form.getId());
-        product.setProductName(form.getProductName());
-        product.setProductPrice(form.getProductPrice());
-        product.setStockQuantity(form.getStockQuantity());
-        product.setKind(form.getKind());
 
-        productService.save(product);
+        Product product = productService.findOne(productId);
+        ProductForm form = new ProductForm();
+        form.setId(product.getId());
+        form.setProductName(product.getProductName());
+        form.setStockQuantity(product.getStockQuantity());
+        form.setProductPrice(product.getProductPrice());
+        form.setKind(product.getKind());
 
+        model.addAttribute("form", form);
         return "redirect:/products/productList";
     }
+
+
 }
 
