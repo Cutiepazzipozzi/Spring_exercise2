@@ -70,6 +70,8 @@ public class ProductController {
     //폼에서 받아와서 id가 보관되는 건지 싶다
     @PostMapping("/products/{id}/edit")
     public String edit2(@ModelAttribute("form") ProductForm form) {
+        //ModelAttribute가 붙으면 객체를 자동으로 생성해준다
+        //는 bean 클래스라야 한다
         Product product = new Product();
         product.setId(form.getId());
         product.setProductName(form.getProductName());
