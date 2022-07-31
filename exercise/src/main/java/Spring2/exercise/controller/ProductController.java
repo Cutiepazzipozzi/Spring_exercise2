@@ -51,7 +51,7 @@ public class ProductController {
     public String edit(@PathVariable("id") Long id, Model model) {
         //PathVariable은 인자로 넣는 변수를 주소에 넣을 때 사용된다
         //수정할 칸에 원래의 값을 쓰기 위해 model을 사용하는게 좋을듯
-       Product product = productService.findOne(id);
+        Product product = productService.findOne(id);
 
         ProductForm form = new ProductForm();
 

@@ -1,5 +1,6 @@
 package Spring2.exercise.product;
 
+import Spring2.exercise.member.Member;
 import Spring2.exercise.order.Order;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
@@ -31,5 +32,12 @@ public class ProductRepository {
 
     public Product findOne(Long id) {
         return em.find(Product.class, id);
+    }
+
+    public Product findByName(String name) {
+        return em.createQuery(
+                "SELECT p from Product p WHERE p.name = :name", Product.class)
+                .setParameter("name", name)
+                .getSingleResult();
     }
 }
