@@ -2,7 +2,7 @@
 <http xmlns:th="http://www.thymeleaf.org">
     <body>
     <div>
-        <form action="/products/join" method="post">
+        <form action="/orders/join" method="post">
             <div>
                 <label for="member">주문회원</label>
                 <select name="memberId" id="member">
@@ -14,19 +14,19 @@
                 </select>
             </div>
             <div>
-                <label for="pName">상품명</label>
-                <select name="pName" id="pName">
+                <label for="product">상품명</label>
+                <select name="productId" id="product">
                     <option value="">상품선택</option>
                     <option th:each="product : ${products}"
                             th:value="${product.id}"
-                            th:text="${product.name}"
+                            th:text="${product.productName}"
                     />
                 </select>
 
             </div>
             <div>
                 <label for="count">주문 수량</label>
-                <input type="text" id="count" name="count" placeholder="주문 수량 입력">
+                <input type="number" id="count" name="count" placeholder="주문 수량 입력">
             </div>
             <button type="submit">등록</button>
         </form>

@@ -14,11 +14,11 @@
             </thead>
             <tbody>
             <tr th:each="order : ${orders}">
-                <td th:text = "${orders.id}"></td>
+                <td th:text = "${order.id}"></td>
                 <td th:text = "${order.member.name}"></td>
-                <td th:text = "${order.pName}"></td>
-                <td th:text = "${orderItem.getTotalPrice}"></td>
-                <td th:text = "${order.pNumber}"></td>
+                <td th:text = "${order.orderItems[0].product.productName}"></td>
+                <td th:text = "${order.getTotalPrice}"></td>
+                <td th:text = "${order.orderItems[0].count}"></td>
             </tr>
 
             </tbody>
@@ -30,5 +30,5 @@
     </script>
 </http>
 
-/*여기서 주문 취소 버튼을 누르면 주문이 삭제돼야 함!
-이걸 해놨는데 어떻게 적용시키느냐가 문제,,.*/
+<!--여기서 주문 취소 버튼을 누르면 주문이 삭제돼야 함!-->
+<!--이걸 해놨는데 어떻게 적용시키느냐가 문제,,.-->

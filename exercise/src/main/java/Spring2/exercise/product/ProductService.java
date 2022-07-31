@@ -25,4 +25,8 @@ public class ProductService {
     public Product findOne(Long id) {
         return productRepository.findOne(id);
     }
+
+    public Product findByName(String name) {
+        return productRepository.findByName(name);
+    }
 }

@@ -36,12 +36,23 @@ public class OrderController {
     }
 
     @PostMapping("/orders/join")
-    public String enroll(@RequestParam("mId") Long memberId, @RequestParam("pId")
-            Long productId, int count) {
+    public String enroll(@RequestParam("memberId") Long memberId,
+                @RequestParam("productId") Long productId,
+                         @RequestParam("count") int count) {
+//        Product product = new Product();
+//        Member member = new Member();
+//
+//        member.setId(form.getMember().getId());
+//        Long memberId = member.getId();
+//
+//        product.setId(productService.findByName(form.getPName()).getId());
+//        Long productId = product.getId();
+//
+//        int count = form.getPNumber();
 
         orderService.order(memberId, productId, count);
         return "redirect:/";
-    }
+  }
 
     @GetMapping("/orders/list")
     public String list(Model model) {
@@ -52,7 +63,7 @@ public class OrderController {
 
     //보엣 주문 조회가 안될 듯함...
     //이거 말고
-    @DeleteMapping("/orders/list/{id}")
+    @GetMapping("/orders/list/{id}")
     public String delete(@RequestParam("id") Long orderId) {
         orderService.cancelOrder(orderId);
         return "redirect:/orders/orderList";
