@@ -29,4 +29,14 @@ public class ProductService {
     public Product findByName(String name) {
         return productRepository.findByName(name);
     }
+
+    @Transactional
+    public void update(Long id, String name, int price, int quantity, OrderProduct kind) {
+        Product product = productRepository.findOne(id);
+        product.setProductName(name);
+        product.setProductPrice(price);
+        product.setStockQuantity(quantity);
+        product.setKind(kind);
+    }
+
 }

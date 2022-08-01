@@ -4,6 +4,7 @@ import Spring2.exercise.member.Member;
 import Spring2.exercise.order.Order;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -24,7 +25,6 @@ public class ProductRepository {
         }
     }
 
-
     public List<Product> findAll() {
         return em.createQuery("select p from Product as p", Product.class)
                 .getResultList();
@@ -40,4 +40,5 @@ public class ProductRepository {
                 .setParameter("name", name)
                 .getSingleResult();
     }
+
 }
