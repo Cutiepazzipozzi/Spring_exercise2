@@ -9,10 +9,8 @@ import Spring2.exercise.product.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 @Controller
@@ -63,9 +61,11 @@ public class OrderController {
 
     //보엣 주문 조회가 안될 듯함...
     //이거 말고
-    @GetMapping("/orders/list/{id}")
-    public String delete(@RequestParam("id") Long orderId) {
+    @PostMapping("/orders/list/{id}")
+    public String delete(@PathVariable("id") Long orderId) {
         orderService.cancelOrder(orderId);
-        return "redirect:/orders/orderList";
+        return "redirect:/";
     }
+
+
 }

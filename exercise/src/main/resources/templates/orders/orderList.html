@@ -19,6 +19,10 @@
                 <td th:text = "${order.orderItems[0].product.productName}"></td>
                 <td th:text = "${order.getTotalPrice}"></td>
                 <td th:text = "${order.orderItems[0].count}"></td>
+                <td>
+                    <a th:href="'javascript:cancel('+${order.id}+')'"
+                       class="btn btn-danger">CANCEL</a>
+                </td>
             </tr>
 
             </tbody>
@@ -26,7 +30,13 @@
     </div>
     </body>
     <script>
-        //여기에 주문 취소 버튼 적용되는 코드가 등장...
+        function cancel(id) {
+            var form = document.createElement("form");
+            form.setAttribute("method", "post");
+            form.setAttribute("action", "/orders/list/" + id);
+            document.body.appendChild(form);
+            form.submit();
+        }
     </script>
 </http>
 
