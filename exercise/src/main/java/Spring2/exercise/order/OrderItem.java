@@ -10,6 +10,7 @@ import org.aspectj.weaver.ast.Or;
 import javax.persistence.*;
 
 @Entity
+@Table(name="order_item")
 @Getter
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)

@@ -3,6 +3,8 @@ package Spring2.exercise.order;
 import Spring2.exercise.member.Member;
 import Spring2.exercise.product.Product;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -13,6 +15,7 @@ import java.util.List;
 @Table(name="orders")
 @Getter
 @Setter
+@RequiredArgsConstructor
 public class Order {
 
     @Id @GeneratedValue
