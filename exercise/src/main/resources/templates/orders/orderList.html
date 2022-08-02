@@ -2,6 +2,16 @@
 <http xmlns:th="http://www.thymeleaf.org">
     <body>
     <div>
+        <div>
+            <form th:object="${orderSearch}" class="form-inline">
+                <div class="form-group mb-2">
+                    <input type="text" th:field="*{memberName}" class="formcontrol"
+                           placeholder="회원명"/>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">검색</button>
+            </form>
+        </div>
+    <div>
         <table>
             <thead>
             <tr>
@@ -21,10 +31,9 @@
                 <td th:text = "${order.orderItems[0].count}"></td>
                 <td>
                     <a th:href="'javascript:cancel('+${order.id}+')'"
-                       class="btn btn-danger">CANCEL</a>
+                       class="btn btn-danger">취소</a>
                 </td>
             </tr>
-
             </tbody>
         </table>
     </div>
