@@ -38,12 +38,8 @@ public class OrderService {
         order.cancel();
     }
 
-    public List<Order> findAll() {
-        return orderRepository.findAll();
-    }
-
     //이제 ordersearch가 들어감 물품이나 회원명으로 사람을 찾는?
-    public void orderSearch() {
-
+    public List<Order> findOrders(OrderSearch orderSearch) {
+        return orderRepository.findAll(orderSearch);
     }
 }

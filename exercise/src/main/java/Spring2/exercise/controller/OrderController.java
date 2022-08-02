@@ -42,13 +42,6 @@ public class OrderController {
         return "redirect:/";
   }
 
-//    @GetMapping("/orders/list")
-//    public String list(Model model) {
-//        List<Order> orders = orderService.findAll();
-//        model.addAttribute("orders", orders);
-//        return "orders/orderList";
-//    }
-
     //보엣 주문 조회가 안될 듯함...
     //이거 말고
     @PostMapping("/orders/list/{orderId}")
@@ -59,7 +52,7 @@ public class OrderController {
 
     @GetMapping("/orders/list")
     public String orderList(@ModelAttribute("orderSearch")OrderSearch orderSearch, Model model) {
-        List<Order> orders = orderSearch.findAll(orderSearch);
+        List<Order> orders = orderService.findOrders(orderSearch);
         model.addAttribute("orders", orders);
 
         return "orders/orderList";
