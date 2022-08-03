@@ -47,11 +47,11 @@ public class OrderController {
     @PostMapping("/orders/list/{orderId}")
     public String delete(@PathVariable("orderId") Long orderId) {
         orderService.cancelOrder(orderId);
-        return "redirect:/";
+        return "redirect:/orders/list";
     }
 
     @GetMapping("/orders/list")
-    public String orderList(@ModelAttribute("orderSearch")OrderSearch orderSearch, Model model) {
+    public String orderList(@ModelAttribute("orderSearch") OrderSearch orderSearch, Model model) {
         List<Order> orders = orderService.findOrders(orderSearch);
         model.addAttribute("orders", orders);
 

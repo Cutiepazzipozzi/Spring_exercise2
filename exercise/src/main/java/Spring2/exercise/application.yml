@@ -1,7 +1,7 @@
 spring:
   profiles: local
   datasource:
-    hikari:
+    h2:
       url: jdbc:h2:mem:test
       #jdbc:h2:tcp://localhost/~/jpashop
       username: sa

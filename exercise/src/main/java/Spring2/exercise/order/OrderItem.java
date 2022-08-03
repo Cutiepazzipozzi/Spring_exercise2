@@ -47,6 +47,7 @@ public class OrderItem {
     //비즈니스
     public void cancel() {
         getProduct().addStock(count);
+        System.out.println(count);
     }
     public int getTotalPrice() {
         return getOrderPrice()*getCount();

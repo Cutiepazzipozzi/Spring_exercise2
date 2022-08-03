@@ -13,9 +13,9 @@ import java.sql.SQLException;
 public class H2ServerConfiguration {
 
     @Bean
-    @ConfigurationProperties("spring.datasource.hikari")
+    @ConfigurationProperties("spring.datasource.h2")
     public DataSource dataSource() throws SQLException {
-        Server.createTcpServer("-tcp", "-tcpAllowOthers", "-tcpPort", "8082").start();
+        Server.createTcpServer("-tcp", "-tcpAllowOthers", "-tcpPort", "8080").start();
 
         return new com.zaxxer.hikari.HikariDataSource();
     }
