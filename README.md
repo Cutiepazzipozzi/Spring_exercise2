@@ -1,4 +1,4 @@
-# Spring_exercise2
+# Spring_practice2
 <em>놀랍게도 exercise1의 심화 버전이 된 활용 강의의 실습...</em>
 <br>
 <h3><em>역할과 구현은 일단 두자....</em></h3>
