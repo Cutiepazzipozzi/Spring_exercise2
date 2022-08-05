@@ -4,35 +4,33 @@ plugins {
 	id 'java'
 }
 
-group = 'Spring2'
+group = 'jpabook'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
-
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
 	}
 }
-
 repositories {
 	mavenCentral()
 }
-
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-devtools'
 	compileOnly 'org.projectlombok:lombok'
-	implementation 'com.h2database:h2'
+	runtimeOnly 'com.h2database:h2'
+	ext["h2.version"] = "1.4.199"
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.5.2'
-	ext["h2.version"] = "1.4.199"
+//JUnit4 추가
 	testImplementation("org.junit.vintage:junit-vintage-engine") {exclude group: "org.hamcrest", module: "hamcrest-core"
 	}
 	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.6'
 }
-
-tasks.named('test') {
+test {
 	useJUnitPlatform()
 }
