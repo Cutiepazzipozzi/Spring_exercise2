@@ -8,8 +8,9 @@
                 <select name="memberId" id="member">
                     <option value="">회원선택</option>
                     <option th:each="member : ${members}"
-                            th:value="${member.id}"
+                            th:value="${member.name}"
                             th:text="${member.name}"
+                            class="MEMBEROPTION"
                     />
                 </select>
             </div>
@@ -18,18 +19,39 @@
                 <select name="productId" id="product">
                     <option value="">상품선택</option>
                     <option th:each="product : ${products}"
-                            th:value="${product.id}"
+                            th:value="${product.productName}"
                             th:text="${product.productName}"
+                            class="PRODUCTOPTION"
                     />
                 </select>
-
             </div>
-            <div>
-                <label for="count">주문 수량</label>
-                <input type="number" id="count" name="count" placeholder="주문 수량 입력">
+            <div id="divBox">
+<!--                <label for="count">주문 수량</label>-->
+<!--                <input type="number" id="count" name="count" placeholder="주문 수량 입력">-->
             </div>
             <button type="submit">등록</button>
         </form>
     </div>
+<!--    <script>-->
+<!--        let product = document.getElementById('product")-->
+<!--        let divBox = document.getElementById('divBox')-->
+<!--        let label = document.createElement('label')-->
+<!--        let input = document.createElement('input')-->
+<!--        input.id = 'countInput'-->
+
+<!--        function ADD(value){-->
+<!--            label.innerHTML = `${value} 주문 수량`-->
+<!--            divBox.appendChild(label)-->
+<!--            divBox.appendChild(input)-->
+<!--        }-->
+<!--        function REMOVE(){-->
+<!--            divBox.removeChild(label)-->
+<!--            divBox.removeChild(input)-->
+<!--        }-->
+
+<!--        product.addEventListener('change',(event)=>{ADD(event.target.value)})-->
+<!--        member.addEventListener('click',REMOVE)-->
+<!--    </script>-->
     </body>
+
 </http>

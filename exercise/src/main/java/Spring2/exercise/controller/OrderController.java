@@ -37,8 +37,10 @@ public class OrderController {
     @PostMapping("/orders/join")
     public String enroll(@RequestParam("memberId") Long memberId,
                 @RequestParam("productId") Long productId,
-                         @RequestParam("count") int count) {
+                         @RequestParam("count") int count,
+                         @RequestParam("forms") List<OrderForm> forms) {
         orderService.order(memberId, productId, count);
+        forms[0] =
         return "redirect:/";
   }
 
