@@ -2,7 +2,7 @@
 <http xmlns:th="http://www.thymeleaf.org">
     <body>
     <div>
-        <form action="/orders/join" method="post">
+        <form action="/orders/join" method="post" name="form">
             <div>
                 <label for="member">주문회원</label>
                 <select name="memberId" id="member">
@@ -16,22 +16,26 @@
             </div>
             <div>
                 <label for="product">상품명</label>
-                <select name="productId" id="product">
-                    <option value="">상품선택</option>
-                    <option th:each="product : ${products}"
-                            th:value="${product.productName}"
-                            th:text="${product.productName}"
-                            class="PRODUCTOPTION"
-                    />
-                </select>
+                <div name="productId" id="product">
+                        <input type="checkbox" value="${product.productName}" th:each="product : ${products}"
+                                th:value="${product.productName}"
+                                th:text="${product.productName}" />
             </div>
             <div id="divBox">
 <!--                <label for="count">주문 수량</label>-->
 <!--                <input type="number" id="count" name="count" placeholder="주문 수량 입력">-->
             </div>
             <button type="submit">등록</button>
+            </div>
         </form>
     </div>
+    <script>
+        let product = document.getElementByName('product')
+        let checked = product.getAttribute("checked")
+        if(checked) {
+            document.form.submit()
+        }
+    </script>
 <!--    <script>-->
 <!--        let product = document.getElementById('product")-->
 <!--        let divBox = document.getElementById('divBox')-->
@@ -55,3 +59,11 @@
     </body>
 
 </http>
+
+<!--<select name="productId" id="product">-->
+<!--    <option value="">상품선택</option>-->
+<!--    <option th:each="product : ${products}"-->
+<!--            th:value="${product.productName}"-->
+<!--            th:text="${product.productName}"-->
+<!--    />-->
+<!--</select>-->

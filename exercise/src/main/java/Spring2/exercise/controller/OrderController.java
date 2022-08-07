@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -40,7 +41,12 @@ public class OrderController {
                          @RequestParam("count") int count,
                          @RequestParam("forms") List<OrderForm> forms) {
         orderService.order(memberId, productId, count);
-        forms[0] =
+
+//        List<Order> orderList = orderService.getOrderList();
+//        for(Order order : orderList) {
+//            String[] checkList = order.getCheckList().split(",");
+//            order.setCheckValue(checkList);
+//        }
         return "redirect:/";
   }
 
